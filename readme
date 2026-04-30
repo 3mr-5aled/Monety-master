@@ -1,0 +1,17 @@
+<!-- convert  react to js on save-->
+npx babel src/app.js --out-file=public/scripts/app.js --presets=babel-preset-env,babel-preset-react --watch
+<!-- activate live-server -->
+live-server
+
+
+<!-- convert react to js once-->
+npx babel src/app.js --out-file=public/scripts/app.js --presets=babel-preset-env,babel-preset-react
+
+<!-- install dependencies -->
+yarn global add @babel/cli --dev
+
+yarn add babel-preset-react
+
+yarn add babel-preset-env
+
+
